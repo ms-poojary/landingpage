@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="logo">
+          <h2><i class="fa-solid fa-fire active"></i>Ulifry</h2>
+        </div>
+        <ul class="menu-items">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About-Us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Features</a></li>
+        </ul>
+        <div class="button">Download</div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="hero">
+        <div class="about">
+          <h1>
+            Make the Best <br />
+            Financila Descision
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis dolor nulla, <br />
+            enim aliquid at, magnam cum quidem delectus atque blanditiis
+            deserunt nisi omnis sapiente corporis <br />
+            unde harum itaque provident cumque.
+          </p>
+          <div class="about-buttons">
+            <div class="button">
+              get started &nbsp; <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div id="btn2" class="button">
+              <i class="fa-regular fa-circle-play"></i> &nbsp; watch vedio
+            </div>
+          </div>
+          <div id="color1" class="colour"></div>
+
+          <div class="tape">
+            <div class="tape1">
+              <span>
+                <p>Achievements</p>
+                <p>Best finance app on market</p>
+              </span>
+              <span>
+                <p>Finance</p>
+                <p>most popular counting app</p>
+              </span>
+            </div>
+            <div class="tape2">Make the best finance</div>
+            <div class="tape3">
+              |<img src="images/Star 1.png" alt="" />| Ulifry premium
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <img
+            class="phone"
+            id="phone1"
+            src="images/iPhone-13-Pro-Front.png"
+            alt=""
+          />
+          <img
+            class="phone"
+            id="phone2"
+            src="images/iPhone-13-Pro-Front.png"
+            alt=""
+          />
+          <img
+            class="phone"
+            id="phone3"
+            src="images/iPhone-13-Pro-Front.png"
+            alt=""
+          />
+          <div id="color2" class="colour"></div>
+        </div>
+        <div class="starts">
+          <img id="star1" src="images/Star 1.png" alt="" />
+          <img id="star2" src="images/Star 1.png" alt="" />
+          <img id="star3" src="images/Star 1.png" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
